@@ -4,7 +4,11 @@
     color: #fff;
     height: em(300);
     box-sizing: border-box;
-    width: 100%;
+
+    @media (max-width: $tablet) {
+        padding: em(32) 0 em(33) em(79);
+        height: em(220);
+    }
 
     &__link {
         color: #fff;
@@ -18,6 +22,11 @@
     &__wrapper {
         padding-top: em(63);
         padding-right: em(25);
+
+        @media (max-width: $tablet) {
+            padding-top: em(19);
+            padding-right: em(40);
+        }
     }
 
     &__title {
@@ -25,6 +34,12 @@
         font-size: em(48);
         line-height: em(50, 48);
         margin-bottom: em(17, 48);
+
+        @media (max-width: $tablet) {
+            font-size: em(36);
+            line-height: em(40, 36);
+            margin-bottom: em(22, 36);
+        }
     }
 
     &__view {
@@ -45,6 +60,11 @@
         background-repeat: no-repeat;
         position: relative;
         margin-right: em(26);
+
+        @media (max-width: $tablet) {
+            width: em(292);
+            height: em(155);
+        }
     }
 
     &__play {
@@ -54,11 +74,24 @@
         position: absolute;
         top: 39%;
         left: 44%;
+        background-size: cover;
+
+        @media (max-width: $tablet) {
+            width: em(37);
+            height: em(37);
+        }
     }
 
     &__photo {
         filter: brightness(70%);
         height: em(171);
         padding-top: em(38);
+
+        @media (max-width: $tablet) {
+            height: em(120);
+            padding-top: em(18);
+            position: absolute;
+            right: -55;
+        }
     }
 }

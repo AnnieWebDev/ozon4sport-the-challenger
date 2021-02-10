@@ -3,8 +3,7 @@
     padding: em(60) em(240) em(287) em(120);
 
     @media (max-width: $tablet) {
-        padding: em(40) em(217) em(126) em(80);
-        height: em(520);
+        padding: em(47) em(217) em(100) em(80);
     }
 
     &__text {
@@ -37,6 +36,12 @@
         @media (max-width: $tablet) {
             width: em(318);
             margin-bottom: em(30);
+        }
+
+        &.info__about_tablet {
+            @media (max-width: $tablet) {
+                order: 1;
+            }
         }
     }
 

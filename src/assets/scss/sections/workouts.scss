@@ -3,9 +3,18 @@
     color: #000;
     margin-bottom: em(70);
 
+    @media (max-width: $tablet) {
+        padding: em(76) em(35) 0 em(80);
+        margin-bottom: em(49);
+    }
+
     &__header {
         display: flex;
         margin-bottom: em(40);
+
+        @media (max-width: $tablet) {
+            margin-bottom: em(32);
+        }
     }
 
     &__title {
@@ -13,6 +22,12 @@
         font-size: em(48);
         line-height: em(50, 48);
         padding-right: em(116, 48);
+
+        @media (max-width: $tablet) {
+            font-size: em(36);
+            line-height: em(40, 36);
+            padding-right: em(32, 36);
+        }
     }
 
     &__wrapper {
@@ -30,6 +45,12 @@
         font-size: em(21);
         line-height: em(28, 21);
         padding-left: em(20, 21);
+
+        @media (max-width: $tablet) {
+            font-size: em(18);
+            line-height: em(24, 18);
+            padding-left: em(10, 18);
+        }
     }
 
     &__link {
@@ -41,6 +62,18 @@
         display: flex;
         padding-right: em(105);
         justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            padding-right: em(116);
+        }
+    }
+
+    &__description {
+        width: em(341);
+
+        @media (max-width: $tablet) {
+            width: em(225);
+        }
     }
 
     &__icon {
@@ -49,6 +82,11 @@
         background-size: cover;
         background-repeat: no-repeat;
 
+        @media (max-width: $tablet) {
+            width: em(48);
+            height: em(48);
+        }
+
         &_check {
             background-image: url('/public/images/icons/workoutsIcons/check.png');
         }
@@ -56,6 +94,10 @@
         &_1 {
             width: em(30);
             background-image: url('/public/images/icons/workoutsIcons/1.png');
+
+            @media (max-width: $tablet) {
+                width: em(25);
+            }
         }
 
         &_2 {
@@ -72,5 +114,11 @@
         font-size: em(18);
         line-height: em(24, 18);
         padding-top: em(25, 18);
+
+        @media (max-width: $tablet) {
+            font-size: em(12);
+            line-height: em(16, 12);
+            padding-top: em(14, 12);
+        }
     }
 }

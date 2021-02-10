@@ -3,8 +3,8 @@
     margin-top: em(-129);
 
     @media (max-width: $tablet) {
-        padding-left: em(80);
-        margin-top: em(-129);
+        padding-left: em(82);
+        margin-top: em(-26);
     }
 
     &__content {
@@ -67,6 +67,12 @@
         position: absolute;
         bottom: em(-49);
         left: em(9);
+        height: em(88);
+
+        @media (max-width: $tablet) {
+            bottom: em(-32);
+            left: em(3);
+        }
     }
 
     &__card-description {
@@ -133,6 +139,11 @@
         position: absolute;
         right: em(18, 14);
         bottom: em(12, 14);
+
+        @media (max-width: $tablet) {
+            right: em(5, 14);
+            bottom: em(14, 14);
+        }
     }
 }
 
