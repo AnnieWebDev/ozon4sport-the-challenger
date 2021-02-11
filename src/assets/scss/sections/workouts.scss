@@ -1,11 +1,16 @@
 .workouts {
-    padding: em(90) em(150) 0 em(120);
+    padding: em(40) em(150) 0 em(120);
     color: #000;
     margin-bottom: em(70);
 
     @media (max-width: $tablet) {
-        padding: em(76) em(35) 0 em(80);
+        padding: em(36) em(35) 0 em(80);
         margin-bottom: em(49);
+    }
+
+    @media (max-width: $mobile) {
+        padding: em(40) em(12) em(45) em(16);
+        margin-bottom: 0;
     }
 
     &__header {
@@ -14,6 +19,10 @@
 
         @media (max-width: $tablet) {
             margin-bottom: em(32);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(20);
         }
     }
 
@@ -28,6 +37,10 @@
             line-height: em(40, 36);
             padding-right: em(32, 36);
         }
+
+        @media (max-width: $mobile) {
+            padding-right: 0;
+        }
     }
 
     &__wrapper {
@@ -38,6 +51,12 @@
         border-left: em(1) solid #005bff;
         padding-left: em(10);
         margin-top: em(7);
+
+        &.mobile-only {
+            @media (max-width: $mobile) {
+                display: flex;
+            }
+        }
     }
 
     &__download {
@@ -50,6 +69,14 @@
             font-size: em(18);
             line-height: em(24, 18);
             padding-left: em(10, 18);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(214, 18);
+            font-size: em(18);
+            line-height: em(21, 18);
+            padding-left: em(10, 18);
+            padding-top: em(19);
         }
     }
 
@@ -66,6 +93,12 @@
         @media (max-width: $tablet) {
             padding-right: em(116);
         }
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+            padding-right: 0;
+            margin-bottom: em(39);
+        }
     }
 
     &__description {
@@ -73,6 +106,11 @@
 
         @media (max-width: $tablet) {
             width: em(225);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(20);
+            width: 100%;
         }
     }
 
@@ -119,6 +157,12 @@
             font-size: em(12);
             line-height: em(16, 12);
             padding-top: em(14, 12);
+        }
+
+        @media (max-width: $mobile) {
+            font-size: em(16);
+            line-height: em(21, 16);
+            padding-top: em(10, 16);
         }
     }
 }

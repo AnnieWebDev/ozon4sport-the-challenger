@@ -1,19 +1,36 @@
 .trainings {
     padding-left: em(120);
-    margin-top: em(-129);
+    margin-top: em(-191);
 
     @media (max-width: $tablet) {
         padding-left: em(82);
-        margin-top: em(-26);
+        margin-top: em(-91);
     }
 
-    &__content {
+    @media (max-width: $mobile) {
+        padding-left: 0;
+        margin-top: em(-111);
+    }
+
+    &__slider {
+        padding-top: em(64);
+        padding-bottom: em(20);
         width: em(1056);
-        display: flex;
-        justify-content: space-between;
+        height: em(365);
 
         @media (max-width: $tablet) {
             width: em(696);
+            height: em(234);
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+
+    &__slide {
+        @media (max-width: $mobile) {
+            width: em(216);
         }
     }
 
@@ -40,10 +57,6 @@
 
         &_april {
             background-image: url('/public/images/trainings/april.jpg');
-        }
-
-        &_animated {
-            animation: jump 4.7s linear 0s infinite;
         }
 
         &_active {
@@ -75,6 +88,11 @@
         @media (max-width: $tablet) {
             bottom: em(-32);
             left: em(3);
+        }
+
+        @media (max-width: $mobile) {
+            background-position: center bottom;
+            height: em(88);
         }
     }
 

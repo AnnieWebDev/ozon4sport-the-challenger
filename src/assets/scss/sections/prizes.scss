@@ -13,6 +13,11 @@
         background-size: cover;
     }
 
+    @media (max-width: $mobile) {
+        height: em(1045);
+        padding: em(40) 0 0 em(15);
+    }
+
     &__header {
         padding-left: em(12);
         display: flex;
@@ -22,6 +27,10 @@
         @media (max-width: $tablet) {
             padding-left: em(0);
             margin-bottom: em(60);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(40);
         }
     }
 
@@ -48,6 +57,19 @@
             line-height: em(14, 14);
             padding-top: em(18, 14);
         }
+
+        @media (max-width: $mobile) {
+            padding-top: 0;
+            text-align: center;
+        }
+    }
+
+    &__columns {
+        display: flex;
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
     }
 
     &__win {
@@ -61,6 +83,7 @@
 
     &__prize {
         padding-right: em(176);
+        margin-bottom: em(33);
 
         @media (max-width: $tablet) {
             padding-right: em(84);
@@ -90,9 +113,25 @@
         display: flex;
         align-items: center;
         width: em(736);
+        margin-bottom: em(50);
 
         @media (max-width: $tablet) {
             width: em(482);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(45);
+        }
+    }
+
+    &__icon-wrapper {
+        width: em(62);
+        flex-shrink: 0;
+
+        &_top {
+            @media (max-width: $mobile) {
+                align-self: flex-start;
+            }
         }
     }
 
@@ -102,21 +141,20 @@
 
         &_first {
             background-image: url('/public/images/icons/prizesIcons/first.png');
-            min-width: em(62);
+            width: em(62);
             height: em(62);
         }
 
         &_second {
             background-image: url('/public/images/icons/prizesIcons/second.png');
-            min-width: em(59);
+            width: em(59);
             height: em(59);
         }
 
         &_third {
             background-image: url('/public/images/icons/prizesIcons/third.png');
-            min-width: em(56);
+            width: em(56);
             height: em(56);
-            margin-left: em(8);
         }
     }
 
@@ -125,12 +163,21 @@
         font-size: em(21);
         line-height: em(24, 21);
         padding-left: em(12);
+        width: em(663);
+        box-sizing: border-box;
 
         @media (max-width: $tablet) {
             width: em(409);
             font-size: em(18);
             line-height: em(24, 18);
             padding-left: em(14, 18);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(232);
+            font-size: em(16);
+            line-height: em(21, 16);
+            padding-left: em(10, 16);
         }
     }
 
@@ -149,6 +196,14 @@
             font-size: em(120);
             line-height: em(120, 120);
             bottom: em(-20, 120);
+        }
+
+        @media (max-width: $mobile) {
+            padding-top: em(14, 108);
+            font-size: em(108);
+            line-height: em(96, 108);
+            bottom: em(-20, 108);
+            left: em(-7, 108);
         }
     }
 }

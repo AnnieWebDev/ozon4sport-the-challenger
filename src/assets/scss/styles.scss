@@ -26,6 +26,12 @@ body {
         font-size: (100/20) + vw;
     }
 
+    @import 'utility/reset';
+    @import 'utility/common';
+    @import 'ui/ui';
+    @import 'blanks/blanks';
+    @import 'sections/sections';
+
     .desktop-only {
         @media (max-width: $tablet) {
             display: none;
@@ -40,9 +46,17 @@ body {
         }
     }
 
-    @import 'utility/reset';
-    @import 'utility/common';
-    @import 'ui/ui';
-    @import 'blanks/blanks';
-    @import 'sections/sections';
+    .hide-for-mobile {
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    .mobile-only {
+        display: none;
+
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
 }
