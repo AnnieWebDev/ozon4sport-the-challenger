@@ -11,6 +11,11 @@
         padding: em(123) em(368) em(34) em(80);
     }
 
+    @media (max-width: $mobile) {
+        height: em(500);
+        padding: em(190) em(7) em(21);
+    }
+
     &__title {
         font-weight: 700;
         font-size: em(48);

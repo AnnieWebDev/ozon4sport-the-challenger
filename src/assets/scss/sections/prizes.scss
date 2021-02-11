@@ -1,10 +1,14 @@
 .prizes {
     padding: em(40) em(119) 0 em(108);
     background-image: url('/public/images/prizesBg.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: em(600);
+    box-sizing: border-box;
+    position: relative;
 
     @media (max-width: $tablet) {
+        height: em(570);
         padding: em(40) em(45) 0 em(80);
         background-size: cover;
     }
@@ -43,12 +47,6 @@
             font-size: em(14);
             line-height: em(14, 14);
             padding-top: em(18, 14);
-        }
-    }
-
-    &__wrapper {
-        @media (max-width: $tablet) {
-            margin-bottom: em(26);
         }
     }
 
@@ -142,12 +140,15 @@
         font-weight: 500;
         font-size: em(156);
         line-height: em(160, 156);
+        position: absolute;
+        bottom: em(-31, 156);
 
         @media (max-width: $tablet) {
             padding-top: em(26, 120);
             padding-left: em(26, 120);
             font-size: em(120);
             line-height: em(120, 120);
+            bottom: em(-20, 120);
         }
     }
 }
