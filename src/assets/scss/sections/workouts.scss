@@ -13,6 +13,14 @@
         margin-bottom: 0;
     }
 
+    &__tab {
+        display: none;
+
+        &_show {
+            display: block;
+        }
+    }
+
     &__header {
         display: flex;
         margin-bottom: em(40);

@@ -34,6 +34,26 @@
         }
     }
 
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+        &_active:hover,
+        &_enabled {
+            .trainings__card {
+                transform: translateY(em(-30));
+            }
+
+            .trainings__card-description {
+                background-color: rgba(0, 91, 255, 0.6);
+            }
+
+            .trainings__card-arrow {
+                opacity: 1;
+            }
+        }
+    }
+
     &__card {
         background-size: 100%;
         background-repeat: no-repeat;
@@ -58,21 +78,6 @@
         &_april {
             background-image: url('/public/images/trainings/april.jpg');
         }
-
-        &_active {
-            &:hover {
-                transform: translateY(em(-30));
-                cursor: pointer;
-
-                .trainings__card-description {
-                    background-color: rgba(0, 91, 255, 0.6);
-                }
-
-                .trainings__card-arrow {
-                    opacity: 1;
-                }
-            }
-        }
     }
 
     &__card-arrow {
@@ -84,6 +89,7 @@
         height: em(121);
         width: em(16);
         transition: 0.3s;
+        background-position: center bottom;
 
         @media (max-width: $tablet) {
             bottom: em(-32);
@@ -91,7 +97,6 @@
         }
 
         @media (max-width: $mobile) {
-            background-position: center bottom;
             height: em(88);
         }
     }
