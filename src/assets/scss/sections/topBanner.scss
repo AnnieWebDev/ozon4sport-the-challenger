@@ -1,0 +1,52 @@
+.top-banner {
+    height: em(500);
+    background-image: url('/public/images/topBannerBg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: em(194) em(645) em(50) em(120);
+    box-sizing: border-box;
+
+    @media (max-width: $tablet) {
+        height: em(320);
+        padding: em(123) em(368) em(34) em(80);
+    }
+
+    @media (max-width: $mobile) {
+        background-image: url('/public/images/topBannerMobile.jpg');
+        height: em(500);
+        padding: em(190) em(7) em(21);
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: em(48);
+        line-height: em(56, 48);
+        padding-bottom: em(85, 48);
+
+        @media (max-width: $tablet) {
+            font-size: em(36);
+            line-height: em(40, 36);
+            padding-bottom: em(48, 36);
+        }
+
+        @media (max-width: $mobile) {
+            text-align: center;
+            font-size: em(30);
+            line-height: em(40, 30);
+            padding-bottom: em(103, 30);
+        }
+    }
+
+    &__logo {
+        width: em(120);
+
+        @media (max-width: $tablet) {
+            width: em(80);
+        }
+
+        @media (max-width: $mobile) {
+            padding-left: em(83);
+            width: em(140);
+        }
+    }
+}

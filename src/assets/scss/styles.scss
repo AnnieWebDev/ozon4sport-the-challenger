@@ -1,0 +1,62 @@
+@import 'utility/fonts';
+
+body {
+    margin: 0;
+}
+
+#ozonChallenger {
+    @import 'utility/vars';
+
+    max-width: 1416px;
+    font-family: $font;
+    color: #fff;
+    font-size: 16px;
+    background: #f9f9f9;
+    margin: 0 auto;
+
+    @media (max-width: $desktop) {
+        font-size: (100/92) + vw;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: (100/59) + vw;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: (100/20) + vw;
+    }
+
+    @import 'utility/reset';
+    @import 'utility/common';
+    @import 'ui/ui';
+    @import 'blanks/blanks';
+    @import 'sections/sections';
+
+    .desktop-only {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    .tablet-only {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: block;
+        }
+    }
+
+    .hide-for-mobile {
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    .mobile-only {
+        display: none;
+
+        @media (max-width: $mobile) {
+            display: block;
+        }
+    }
+}

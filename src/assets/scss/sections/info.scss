@@ -1,0 +1,114 @@
+.info {
+    background: #002855;
+    padding: em(60) em(240) em(301) em(120);
+
+    @media (max-width: $tablet) {
+        padding: em(47) em(217) em(100) em(80);
+    }
+
+    @media (max-width: $mobile) {
+        padding: em(40) em(11) em(103) em(16);
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: em(21);
+        line-height: em(28, 21);
+        margin-bottom: em(60, 21);
+
+        @media (max-width: $tablet) {
+            font-size: em(18);
+            line-height: em(24, 18);
+            margin-bottom: em(60, 18);
+        }
+
+        @media (max-width: $mobile) {
+            font-size: em(16);
+            line-height: em(21, 16);
+            margin-bottom: em(40, 16);
+        }
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__about {
+        display: flex;
+        width: em(336);
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            width: em(318);
+            margin-bottom: em(30);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(292);
+            margin-bottom: em(20);
+        }
+
+        &.info__about_tablet {
+            @media (max-width: $tablet) {
+                order: 1;
+            }
+
+            @media (max-width: $mobile) {
+                order: 0;
+            }
+        }
+    }
+
+    &__icon {
+        width: em(56);
+        height: em(56);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width: $tablet) {
+            width: em(48);
+            height: em(48);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(42);
+            height: em(42);
+        }
+
+        &_calendar {
+            background-image: url('/public/images/icons/infoIcons/calendar.svg');
+        }
+
+        &_play {
+            background-image: url('/public/images/icons/infoIcons/play.svg');
+        }
+
+        &_flag {
+            background-image: url('/public/images/icons/infoIcons/flag.svg');
+        }
+    }
+
+    &__about-title {
+        padding-left: em(20, 21);
+        font-weight: 500;
+        font-size: em(21);
+        line-height: em(28, 21);
+
+        @media (max-width: $tablet) {
+            padding-left: em(10, 18);
+            font-size: em(18);
+            line-height: em(24, 18);
+        }
+
+        @media (max-width: $mobile) {
+            padding-left: em(12, 18);
+            font-size: em(16);
+            line-height: em(21, 16);
+        }
+    }
+}

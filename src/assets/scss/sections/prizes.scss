@@ -1,0 +1,210 @@
+.prizes {
+    padding: em(40) em(119) 0 em(108);
+    background-image: url('/public/images/prizesBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: em(600);
+    box-sizing: border-box;
+    position: relative;
+
+    @media (max-width: $tablet) {
+        height: em(570);
+        padding: em(40) em(45) 0 em(80);
+        background-size: cover;
+    }
+
+    @media (max-width: $mobile) {
+        height: em(1045);
+        padding: em(40) 0 0 em(15);
+    }
+
+    &__header {
+        padding-left: em(12);
+        display: flex;
+        margin-bottom: em(35);
+        justify-content: space-between;
+
+        @media (max-width: $tablet) {
+            padding-left: em(0);
+            margin-bottom: em(60);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(40);
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: em(48);
+        line-height: em(50, 48);
+
+        @media (max-width: $tablet) {
+            font-size: em(36);
+            line-height: em(40, 36);
+        }
+    }
+
+    &__link {
+        align-self: flex-end;
+        color: #fff;
+        font-size: em(14);
+        line-height: em(22, 14);
+        padding-top: em(29, 14);
+
+        @media (max-width: $tablet) {
+            font-size: em(14);
+            line-height: em(14, 14);
+            padding-top: em(18, 14);
+        }
+
+        @media (max-width: $mobile) {
+            padding-top: 0;
+            text-align: center;
+        }
+    }
+
+    &__columns {
+        display: flex;
+
+        @media (max-width: $mobile) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__win {
+        display: flex;
+        margin-bottom: em(26);
+
+        @media (max-width: $tablet) {
+            margin-bottom: em(29);
+        }
+    }
+
+    &__prize {
+        padding-right: em(176);
+        margin-bottom: em(33);
+
+        @media (max-width: $tablet) {
+            padding-right: em(84);
+            width: em(212);
+        }
+    }
+
+    &__place {
+        font-weight: 400;
+        font-size: em(18);
+        line-height: em(24, 18);
+        background: #f81155;
+        border: em(2) solid #fff;
+        box-sizing: border-box;
+        border-radius: em(28, 18);
+        padding: 0 em(11);
+        display: inline-block;
+    }
+
+    &__rubles {
+        font-weight: 700;
+        font-size: em(48);
+        line-height: em(48, 48);
+    }
+
+    &__how-to-win {
+        display: flex;
+        align-items: center;
+        width: em(736);
+        margin-bottom: em(50);
+
+        @media (max-width: $tablet) {
+            width: em(482);
+        }
+
+        @media (max-width: $mobile) {
+            margin-bottom: em(45);
+            width: 100%;
+        }
+    }
+
+    &__icon-wrapper {
+        width: em(62);
+        flex-shrink: 0;
+
+        &_top {
+            @media (max-width: $mobile) {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    &__icon {
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &_first {
+            background-image: url('/public/images/icons/prizesIcons/first.png');
+            width: em(62);
+            height: em(62);
+        }
+
+        &_second {
+            background-image: url('/public/images/icons/prizesIcons/second.png');
+            width: em(59);
+            height: em(59);
+        }
+
+        &_third {
+            background-image: url('/public/images/icons/prizesIcons/third.png');
+            width: em(56);
+            height: em(56);
+        }
+    }
+
+    &__rules {
+        font-weight: 300;
+        font-size: em(21);
+        line-height: em(24, 21);
+        padding-left: em(12);
+        width: em(663);
+        box-sizing: border-box;
+
+        @media (max-width: $tablet) {
+            width: em(409);
+            font-size: em(18);
+            line-height: em(24, 18);
+            padding-left: em(14, 18);
+        }
+
+        @media (max-width: $mobile) {
+            width: em(232);
+            font-size: em(16);
+            line-height: em(21, 16);
+            padding-left: em(10, 16);
+        }
+    }
+
+    &__banner {
+        padding-top: em(34, 156);
+        padding-left: em(169, 156);
+        font-weight: 500;
+        font-size: em(156);
+        line-height: em(160, 156);
+        position: absolute;
+        bottom: em(-31, 156);
+
+        @media (max-width: $tablet) {
+            padding-top: em(26, 120);
+            padding-left: em(26, 120);
+            font-size: em(120);
+            line-height: em(120, 120);
+            bottom: em(-20, 120);
+        }
+
+        @media (max-width: $mobile) {
+            padding-top: em(14, 108);
+            font-size: em(108);
+            line-height: em(96, 108);
+            bottom: em(-20, 108);
+            left: em(-7, 108);
+        }
+    }
+}
