@@ -90,6 +90,7 @@
         width: em(16);
         transition: 0.3s;
         background-position: center bottom;
+        background-repeat: no-repeat;
 
         @media (max-width: $tablet) {
             bottom: em(-32);

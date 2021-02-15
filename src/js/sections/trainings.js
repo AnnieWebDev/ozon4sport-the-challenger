@@ -47,20 +47,14 @@ $(document).ready(function () {
         loop: false,
 
         breakpoints: {
-            0: {
+            1: {
                 slidesPerView: 'auto',
                 centeredSlides: true,
                 spaceBetween: 30,
                 allowTouchMove: true,
             },
 
-            936: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-                allowTouchMove: false,
-            },
-
-            1416: {
+            577: {
                 slidesPerView: 3,
                 spaceBetween: 24,
                 allowTouchMove: false,
