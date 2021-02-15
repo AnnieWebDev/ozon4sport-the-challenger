@@ -82,7 +82,7 @@
     &__video {
         width: em(457);
         height: em(243);
-        background-image: url('/public/images/bottomBanner/videoGirl.jpg');
+        background-image: url('public/images/bottomBanner/videoGirl.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         position: absolute;
@@ -101,7 +101,7 @@
     }
 
     &__play {
-        background-image: url('/public/images/bottomBanner/play.png');
+        background-image: url('public/images/bottomBanner/play.png');
         width: em(58);
         height: em(58);
         position: absolute;

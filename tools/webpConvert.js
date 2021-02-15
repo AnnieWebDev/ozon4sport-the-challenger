@@ -32,7 +32,7 @@ const startWatch = function (watcher) {
     console.log(`\n\n watching ${src} directory for changes\n\n`);
     watcher.on('all', (event, path) => {
         const relativePath = path.split('\\').join('/');
-        const publicPath = `./public/${relativePath.replace(
+        const publicPath = `.public/${relativePath.replace(
             'src/assets/',
             ''
         )}`;

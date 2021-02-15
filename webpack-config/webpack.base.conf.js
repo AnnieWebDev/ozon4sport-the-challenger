@@ -6,7 +6,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const PATHS = {
-    public: path.join(__dirname, '../public'),
+    public: path.join(__dirname, '..public'),
     src: path.join(__dirname, '../src'),
     build: path.join(__dirname, '../build'),
     assets: 'assets/',
@@ -115,7 +115,7 @@ module.exports = {
     },
     resolve: {
         alias: {
-            public: path.resolve(__dirname, '../public'),
+            public: path.resolve(__dirname, '..public'),
         },
     },
     plugins: [

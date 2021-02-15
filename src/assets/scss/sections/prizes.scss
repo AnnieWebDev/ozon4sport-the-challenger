@@ -1,6 +1,6 @@
 .prizes {
     padding: em(40) em(119) 0 em(108);
-    background-image: url('/public/images/prizesBg.png');
+    background-image: url('public/images/prizesBg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: em(600);
@@ -140,19 +140,19 @@
         background-repeat: no-repeat;
 
         &_first {
-            background-image: url('/public/images/icons/prizesIcons/first.png');
+            background-image: url('public/images/icons/prizesIcons/first.png');
             width: em(62);
             height: em(62);
         }
 
         &_second {
-            background-image: url('/public/images/icons/prizesIcons/second.png');
+            background-image: url('public/images/icons/prizesIcons/second.png');
             width: em(59);
             height: em(59);
         }
 
         &_third {
-            background-image: url('/public/images/icons/prizesIcons/third.png');
+            background-image: url('public/images/icons/prizesIcons/third.png');
             width: em(56);
             height: em(56);
         }

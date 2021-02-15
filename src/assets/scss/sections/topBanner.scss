@@ -1,6 +1,6 @@
 .top-banner {
     height: em(500);
-    background-image: url('/public/images/topBannerBg.jpg');
+    background-image: url('public/images/topBannerBg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: em(194) em(645) em(50) em(120);
@@ -12,7 +12,7 @@
     }
 
     @media (max-width: $mobile) {
-        background-image: url('/public/images/topBannerMobile.jpg');
+        background-image: url('public/images/topBannerMobile.jpg');
         height: em(500);
         padding: em(190) em(7) em(21);
     }

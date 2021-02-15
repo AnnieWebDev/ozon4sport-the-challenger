@@ -134,12 +134,12 @@
         }
 
         &_check {
-            background-image: url('/public/images/icons/workoutsIcons/check.png');
+            background-image: url('public/images/icons/workoutsIcons/check.png');
         }
 
         &_1 {
             width: em(30);
-            background-image: url('/public/images/icons/workoutsIcons/1.png');
+            background-image: url('public/images/icons/workoutsIcons/1.png');
 
             @media (max-width: $tablet) {
                 width: em(25);
@@ -147,11 +147,11 @@
         }
 
         &_2 {
-            background-image: url('/public/images/icons/workoutsIcons/2.png');
+            background-image: url('public/images/icons/workoutsIcons/2.png');
         }
 
         &_3 {
-            background-image: url('/public/images/icons/workoutsIcons/3.png');
+            background-image: url('public/images/icons/workoutsIcons/3.png');
         }
     }
 

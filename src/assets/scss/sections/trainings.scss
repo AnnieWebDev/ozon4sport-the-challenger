@@ -68,20 +68,20 @@
         }
 
         &_february {
-            background-image: url('/public/images/trainings/february.jpg');
+            background-image: url('public/images/trainings/february.jpg');
         }
 
         &_march {
-            background-image: url('/public/images/trainings/march.jpg');
+            background-image: url('public/images/trainings/march.jpg');
         }
 
         &_april {
-            background-image: url('/public/images/trainings/april.jpg');
+            background-image: url('public/images/trainings/april.jpg');
         }
     }
 
     &__card-arrow {
-        background-image: url('/public/images/trainings/arrow.svg');
+        background-image: url('public/images/trainings/arrow.svg');
         opacity: 0;
         position: absolute;
         bottom: em(-49);
