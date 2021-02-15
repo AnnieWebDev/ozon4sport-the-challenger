@@ -38,7 +38,22 @@
         text-decoration: none;
         color: inherit;
 
-        &_active:hover,
+        @media (min-width: $mobile) {
+            &_active:hover {
+                .trainings__card {
+                    transform: translateY(em(-30));
+                }
+
+                .trainings__card-description {
+                    background-color: rgba(0, 91, 255, 0.6);
+                }
+
+                .trainings__card-arrow {
+                    opacity: 1;
+                }
+            }
+        }
+
         &_enabled {
             .trainings__card {
                 transform: translateY(em(-30));
